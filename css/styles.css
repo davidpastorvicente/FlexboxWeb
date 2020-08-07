@@ -1,0 +1,75 @@
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: #303137;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    max-width: 1140px;
+    width: 96%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.logo {
+    color: #303137;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #66b6d3;
+    font-weight: 700;
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    list-style: none;
+}
+
+.topnav li a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #303137;
+}
+
+.drop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .topnav li.item {
+        display: none;
+    }
+
+    .topnav li.drop {
+        display: block;
+    }
+
+    .topnav.ext {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .topnav.ext li.item {
+        display: block;
+        line-height: 2;
+    }
+
+    .topnav.ext li.drop {
+        margin-bottom: 10px;
+    }
+}
