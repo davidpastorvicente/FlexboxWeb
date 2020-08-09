@@ -100,7 +100,7 @@ header {
 
 /** Services **/
 
-.services {
+.services, .contact {
     background-color: #f1f3fa;
     padding: 4rem 1rem;
 }
@@ -148,7 +148,7 @@ header {
     justify-content: center;
 }
 
-.btn button {
+.btn button, .submit button {
     background-color: #66b6d3;
     cursor: pointer;
     padding: .8rem 2rem;
@@ -156,8 +156,22 @@ header {
     font-weight: 600;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0,0,0,.15)
+}
+
+@media (max-width: 680px) {
+    .object {
+        flex-direction: column;
+    }
+
+    .icon.right {
+        order: 1;
+    }
+
+    .text {
+        padding-top: 2.5rem;
+    }
 }
 
 /** Portfolio **/
@@ -217,4 +231,45 @@ hr {
     text-align: justify;
     padding: 0 8px;
     margin: 0;
+}
+
+/** Contact **/
+
+.contact {
+    margin-top: 4rem;
+}
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+form label {
+    font-size: 18px;
+}
+
+.inp {
+    margin-bottom: .75rem;
+}
+
+.inp input, .inp textarea {
+    max-width: 500px;
+    padding: .375rem .5rem;
+    font-size: 1rem;
+    width: 100%;
+    color: #292b2c;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-clip: padding-box;
+    margin: .75rem 0 .5rem;
+}
+
+.submit {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+    .inp {
+        display: flex;
+    }
 }
